@@ -6,10 +6,11 @@ Here I use [dna_feature_viewer](https://github.com/Edinburgh-Genome-Foundry/DnaF
 
 The library allow robust generation of genetic map which often has a lot of variety in its content.
 
-We can not show the actual name of genetic parts (gene, promoter, RBS) to protect intellectual property of laboratory.
+We can not show the actual name of genetic parts (gene, promoter, RBS) to 
 
 Essentially, a two component system has been used in the research.
 
+![thesis-34y-luxri-map](./figure/fig-2.png)
 ![thesis-34y-luxri-map](https://raw.githubusercontent.com/katondr/master-thesis-figures/main/figure/thesis-34y-luxri-map.png)
 
 <!-- Document structure
