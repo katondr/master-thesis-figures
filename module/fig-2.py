@@ -34,9 +34,6 @@ m2 = graphic_record.crop((1000, 1080))
 m3 = graphic_record.crop((1110-35, 1190+5))
 
 
-#for item in graphic_record.__dict__["features"]:
-#    item.__dict__["label"] = item.__dict__["label"][3] 
-#fig, _ = m1.plot(figure_width=6, figure_height=1.25)
 #fig, axs = plt.subplots(nrows=3, ncols=1, figsize=(6, 4))#, facecolor="None")
 fig, axs = plt.subplots(nrows=3, ncols=1, figsize=(8, 4))#, facecolor="None")
 #graphic_record.plot(ax=axs[0])

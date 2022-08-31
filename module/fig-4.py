@@ -1,14 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 29 12:51:08 2021
-
-@author: Katon Dorojatun
-"""
-
 from setting import *
 
-#%%
 data = pd.read_csv('../data/fl-210615.csv')
 #time = data.t.unique().tolist()[:-1]
 time_short = ["0", "", "4", "", "8", "", "12"]
@@ -48,7 +39,7 @@ for index, row in result.iterrows():
     result.loc[index, "F/A_std"] = data["F/A"][
         (data["x"]==row["x"])&(data["t"]==row["t"])
     ].std()
-#%%
+
 fig, axs = plt.subplots(nrows=3, ncols=3, sharex="row", sharey="row",
                            facecolor='white', figsize=(5, 5.5))
 width = 0.35
@@ -149,4 +140,4 @@ axs[row, 2].set_title(label="high copy", fontdict={"fontsize": 9})
 fig.tight_layout()
 #fig.savefig("../figure/thesis-34y-luxri.png", dpi=300, transparent=True)
 fig.savefig("../figure/thesis-34y-luxri-graph.pdf")
-fig.savefig("../figure/thesis-34y-luxri-graph.png", dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig("../figure/fig-4.png", dpi=300, bbox_inches='tight', transparent=True)

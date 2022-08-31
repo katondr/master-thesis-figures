@@ -9,10 +9,9 @@ from dna_features_viewer import BiopythonTranslator
 import biotite.database.entrez as entrez
 from dna_features_viewer import compute_features_levels, GraphicRecord, GraphicFeature
 
+CDSTranslator = BiopythonTranslator
+"""
 class CDSTranslator(BiopythonTranslator):
-    """
-    """
-    
     def compute_feature_fontdict(self, feature):
         """"""
         font = {'family': 'sans-serif', 'weight': 'normal', 'size': 9, 'style': 'italic'}
@@ -35,6 +34,7 @@ class CDSTranslator(BiopythonTranslator):
             if (feature.type == "CDS") and BiopythonTranslator.compute_feature_label(self, feature) != "unknown"
             #and ("lux" in feature.ref)
         ]
+"""
 
 features=[
     GraphicFeature(start=974, end=981, strand=-1, color="tab:grey"),
@@ -58,7 +58,7 @@ features[6].label = "inversed repeat"
 features[7].label = "-10"
 features[8].label = "RBS of luxI"
 
-features[0].fontdict["fontsize"] = 9
+features[0].fontdict["size"] = 9
 
 file = entrez.fetch_single_file(["AF170104.1"], None, "nuccore", "gb")
 graphic_record = CDSTranslator().translate_record(file)
@@ -85,12 +85,12 @@ axs[0].fill_between((215, 1768), +2, -0.5, alpha=0.2, facecolor="tab:blue")
 axs[1].fill_between((968, 1187), +2, -0.5, alpha=0.2, facecolor="tab:blue")
 axs[0].set_xticks(np.arange(0, 9000, 2000))
 #axs[1].set_xticks(np.arange(0, 2100, 500))
-axs[0].text(1, 0.75, "sequence length: "+str(graphic_record.sequence_length), transform=axs[0].transAxes, fontsize=9, va='top', ha='right')
-axs[0].text(0.12, 0.5, "regulatory\ngenes", transform=axs[0].transAxes, fontsize=9, va='top', ha='center')
-axs[1].text(0.55, 0.5, "promoter\nregion", transform=axs[1].transAxes, fontsize=9, va='top', ha='center')
-axs[0].text(-0.025, 0.5, "(a)", transform=axs[0].transAxes, fontsize=9, va='top', ha='right')
-axs[1].text(-0.025, 0.5, "(b)", transform=axs[1].transAxes, fontsize=9, va='top', ha='right')
+axs[0].text(1, 0.75, "sequence length: "+str(graphic_record.sequence_length), transform=axs[0].transAxes, size=9, va='top', ha='right')
+axs[0].text(0.12, 0.5, "regulatory\ngenes", transform=axs[0].transAxes, size=9, va='top', ha='center')
+axs[1].text(0.55, 0.5, "promoter\nregion", transform=axs[1].transAxes, size=9, va='top', ha='center')
+axs[0].text(-0.025, 0.5, "(a)", transform=axs[0].transAxes, size=9, va='top', ha='right')
+axs[1].text(-0.025, 0.5, "(b)", transform=axs[1].transAxes, size=9, va='top', ha='right')
 
 fig.tight_layout()
 #fig.savefig('../figure/lux-operon-map.pdf', bbox_inches='tight')
-fig.savefig('../figure/lux-operon-map.png', dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig('../figure/fig-1.png', dpi=300, bbox_inches='tight', transparent=True)

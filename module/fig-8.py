@@ -42,4 +42,4 @@ fig.tight_layout()
 
 #plt.show()
 #fig.savefig("../figure/aln-2.pdf", bbox_inches='tight')
-fig.savefig("../figure/aln-2.png", dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig("../figure/fig-8.png", dpi=300, bbox_inches='tight', transparent=True)
