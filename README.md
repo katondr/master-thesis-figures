@@ -10,8 +10,16 @@ We can not show the actual name of genetic parts (gene, promoter, RBS) to
 
 Essentially, a two component system has been used in the research.
 
-![thesis-34y-luxri-map](./figure/fig-2.png)
-![thesis-34y-luxri-map](https://raw.githubusercontent.com/katondr/master-thesis-figures/main/figure/thesis-34y-luxri-map.png)
+<!--
+![figure-1](./figure/fig-1.png)
+-->
+![figure-2](./figure/fig-2.png)
+![figure-3](./figure/fig-3.png)
+![figure-4](./figure/fig-4.png)
+![figure-5](./figure/fig-5.png)
+![figure-6](./figure/fig-6.png)
+![figure-7](./figure/fig-7.png)
+![figure-8](./figure/fig-8.png)
 
 <!-- Document structure
 * Data
