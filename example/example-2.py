@@ -9,7 +9,7 @@ plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.sans-serif"] = "Times New Roman"
 plt.rcParams['font.size'] = "9"
 
-text_file = open("./fig-2-seq.txt")
+text_file = open("module/fig-2-seq.txt")
 sequence = text_file.read()
 text_file.close()
 
@@ -76,4 +76,4 @@ axs[1].text(0, 0.75, "(b)", transform=axs[1].transAxes, size=9, va='top', ha='le
 
 fig.tight_layout()
 #fig.savefig('../figure/promoter-region.pdf', bbox_inches='tight')
-fig.savefig('../figure/fig-2.png', dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig('figure/fig-2.png', dpi=300, bbox_inches='tight', transparent=True)

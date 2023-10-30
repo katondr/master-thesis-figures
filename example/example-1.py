@@ -93,4 +93,4 @@ axs[1].text(-0.025, 0.5, "(b)", transform=axs[1].transAxes, size=9, va='top', ha
 
 fig.tight_layout()
 #fig.savefig('../figure/lux-operon-map.pdf', bbox_inches='tight')
-fig.savefig('../figure/fig-1.png', dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig('figure/fig-1.png', dpi=300, bbox_inches='tight', transparent=True)
