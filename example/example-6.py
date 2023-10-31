@@ -8,11 +8,11 @@ plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.sans-serif"] = "Times New Roman"
 plt.rcParams['font.size'] = "9"
 
-file_a = open('fig-6-seq-1.txt')
+file_a = open('data/fig-6-seq-1.txt')
 sequence_a = file_a.read()
 file_a.close()
 
-file_b = open('fig-6-seq-2.txt')
+file_b = open('data/fig-6-seq-2.txt')
 sequence_b = file_b.read()
 file_b.close()
 
@@ -53,4 +53,4 @@ ax2.text(0.25, 0.8, "ORFf", transform=ax2.transAxes, size=9, va='top', ha='right
 ax2.text(0, 1, "(b)", transform=ax2.transAxes, size=9, va='top', ha='right')
 fig.tight_layout()
 #fig.savefig("../figure/thesis-sp.pdf")
-fig.savefig("../figure/fig-6.png", dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig("figure/fig-6.png", dpi=300, bbox_inches='tight', transparent=True)

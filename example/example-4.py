@@ -1,6 +1,6 @@
 from setting import *
 
-data = pd.read_csv('../data/fl-210615.csv')
+data = pd.read_csv('data/fl-210615.csv')
 #time = data.t.unique().tolist()[:-1]
 time_short = ["0", "", "4", "", "8", "", "12"]
 time = [0, 2, 4, 6, 8, 10, 12]
@@ -139,5 +139,5 @@ axs[row, 2].set_title(label="high copy", fontdict={"fontsize": 9})
 
 fig.tight_layout()
 #fig.savefig("../figure/thesis-34y-luxri.png", dpi=300, transparent=True)
-fig.savefig("../figure/thesis-34y-luxri-graph.pdf")
-fig.savefig("../figure/fig-4.png", dpi=300, bbox_inches='tight', transparent=True)
+fig.savefig("figure/thesis-34y-luxri-graph.pdf")
+fig.savefig("figure/fig-4.png", dpi=300, bbox_inches='tight', transparent=True)

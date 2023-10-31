@@ -9,7 +9,7 @@ plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.sans-serif"] = "Times New Roman"
 plt.rcParams['font.size'] = "9"
 
-text_file = open("module/fig-2-seq.txt")
+text_file = open("data/fig-2-seq.txt")
 sequence = text_file.read()
 text_file.close()
 

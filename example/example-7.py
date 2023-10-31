@@ -8,7 +8,7 @@ plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.sans-serif"] = "Times New Roman"
 plt.rcParams['font.size'] = "9"
 
-seq_file = open('fig-7-seq.txt')
+seq_file = open('data/fig-7-seq.txt')
 sequence = seq_file.read()
 seq_file.close()
 
@@ -63,4 +63,4 @@ fig.set_xticks(np.arange(1327, 6000, 1000))
 fig.set_xticklabels(np.arange(0, 5000, 1000))
 fig.figure.tight_layout()
 #fig.figure.savefig("../figure/thesis-slr0378-map.pdf")
-fig.figure.savefig("../figure/fig-7.png", dpi=300, bbox_inches='tight', transparent=True)
+fig.figure.savefig("figure/fig-7.png", dpi=300, bbox_inches='tight', transparent=True)
